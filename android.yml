@@ -20,7 +20,8 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt update
-        sudo apt install -y build-essential ccache libncurses5 libstdc++6 python3-pip git zip unzip openjdk-11-jdk
+        sudo apt install -y build-essential ccache libncurses-dev libstdc++6 python3-pip git zip unzip openjdk-11-jdk
+
         pip install buildozer
 
     - name: Build APK
