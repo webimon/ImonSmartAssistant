@@ -27,7 +27,6 @@ jobs:
     - name: Build APK
       run: |
         buildozer init || true
-        cp buildozer.spec buildozer.spec
         buildozer android debug
 
     - name: Upload APK
